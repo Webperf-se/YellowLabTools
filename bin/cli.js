@@ -123,7 +123,7 @@ if (cli.flags.reporter && cli.flags.reporter !== 'json' && cli.flags.reporter !=
                     console.log(JSON.stringify(data, null, 2));
             }
 
-        }).fail(function(err) {
+        }).catch(function(err) {
             
             debug('Test failed for %s', url);
             console.error(err);
